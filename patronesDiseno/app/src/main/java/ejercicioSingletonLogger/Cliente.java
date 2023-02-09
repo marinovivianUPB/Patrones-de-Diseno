@@ -16,6 +16,6 @@ public class Cliente {
     }
 
     public void usarCupon(int compra){
-        Logger.getInstance().escribir("EL CLIENTE "+nombre+" CON ID: "+id+" ESTÁ UTILIZANDO UN CUPÓN DE "+cupon+" BS EN SU COMPRA DE "+compra+" BS \n LA FACTURA FINAL ES DE: "+(compra-cupon));
+        Logger.getInstance().escribir("EL CLIENTE "+nombre+" CON ID: "+id+" ESTÁ UTILIZANDO UN CUPÓN DE "+cupon+" BS EN SU COMPRA DE "+compra+" BS \n LA FACTURA FINAL ES DE: "+(compra-cupon+" BS");
     }
 }
