@@ -23,7 +23,9 @@ public class FactoryIDE {
     }
 
 
-    public static IIDE makeMap(){
-        
+    public static IIDE makeMap(String type){
+        ideMap.put("java", new Eclipse());
+        ideMap.put("otro", new VisualStudio());
+        return ideMap.containsKey(type)?ideMap.get(type):null;
     }
 }
