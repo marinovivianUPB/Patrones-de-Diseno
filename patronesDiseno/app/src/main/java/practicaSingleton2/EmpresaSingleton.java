@@ -1,4 +1,4 @@
-package practicaSingleton;
+package practicaSingleton2;
 
 public class EmpresaSingleton {
 
