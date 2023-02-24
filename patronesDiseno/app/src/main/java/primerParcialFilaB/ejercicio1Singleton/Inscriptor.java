@@ -23,8 +23,8 @@ public class Inscriptor {
 
     public void verRegistro(){
         System.out.println("----------------------LISTADO DE REGISTROS---------------------------");
-        for(){
-
+        for(Registro registro : inscripciones){
+            registro.show();
         }
     }
 

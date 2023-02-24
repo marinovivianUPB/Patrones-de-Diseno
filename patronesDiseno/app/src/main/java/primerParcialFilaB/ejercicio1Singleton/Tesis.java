@@ -3,16 +3,14 @@ package primerParcialFilaB.ejercicio1Singleton;
 public class Tesis {
     private String titulo;
     private String mencion;
-    private String nombreEstudiante;
-    private String ciEstudiante;
+    private Estudiante estudiante;
 
     
 
-    public Tesis(String titulo, String mencion, String nombreEstudiante, String ciEstudiante) {
+    public Tesis(String titulo, String mencion, Estudiante estudiante) {
         this.titulo = titulo;
         this.mencion = mencion;
-        this.nombreEstudiante = nombreEstudiante;
-        this.ciEstudiante = ciEstudiante;
+        this.estudiante = estudiante;
     }
     public String getTitulo() {
         return titulo;
@@ -26,18 +24,7 @@ public class Tesis {
     public void setMencion(String mencion) {
         this.mencion = mencion;
     }
-    public String getNombreEstudiante() {
-        return nombreEstudiante;
-    }
-    public void setNombreEstudiante(String nombreEstudiante) {
-        this.nombreEstudiante = nombreEstudiante;
-    }
-    public String getCiEstudiante() {
-        return ciEstudiante;
-    }
-    public void setCiEstudiante(String ciEstudiante) {
-        this.ciEstudiante = ciEstudiante;
-    }
+
 
     
 
@@ -47,14 +34,14 @@ public class Tesis {
         int result = 1;
         result = prime * result + ((titulo == null) ? 0 : titulo.hashCode());
         result = prime * result + ((mencion == null) ? 0 : mencion.hashCode());
-        result = prime * result + ((nombreEstudiante == null) ? 0 : nombreEstudiante.hashCode());
-        result = prime * result + ((ciEstudiante == null) ? 0 : ciEstudiante.hashCode());
+        result = prime * result + ((estudiante.getNombre() == null) ? 0 : estudiante.getNombre().hashCode());
+        result = prime * result + ((estudiante.getCi() == null) ? 0 : estudiante.getCi().hashCode());
         return result;
     }
-    
+
     public void show(){
         System.out.println("--------------------------------TESIS------------------------------");
-        System.out.println("ESTUDIANTE: "+nombreEstudiante+" CI: "+ciEstudiante);
+        System.out.println("ESTUDIANTE: "+estudiante.getNombre()+" CI: "+estudiante.getCi());
         System.out.println("TITULO: "+titulo);
         System.out.println("MENCION: "+mencion);
     }
